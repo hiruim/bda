@@ -127,7 +127,7 @@ class About extends StatelessWidget {
               ),
               SizedBox(height: 20),
               Text(
-                "Your feedback is important to us in order to make Blood Donation App better for you. Report any bugs, improvements and your suggestions regarding Blood Donation app so we can serve you even better.",
+                "Your feedbackk is important to us in order to make Blood Donation App better for you. Report any bugs, improvements and your suggestions regarding Blood Donation app so we can serve you even better.",
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18),
               ),
