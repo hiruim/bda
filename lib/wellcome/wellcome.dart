@@ -70,7 +70,7 @@ class _WelcomePageState extends State<WelcomePage> {
               Expanded(
                 flex: 5,
                 child: Text(
-                  "Welcome to Blood Donation Application",
+                  "Welcome to my Blood Donation Application",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25,
