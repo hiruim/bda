@@ -35,7 +35,7 @@ class _StudentMessageScreenState extends State<StudentMessage> {
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment
-                    .start, // Aligns children to the start (left) of the cross axis
+                    .start, // Aligns  children to the start (left) of the cross axis
                 children: <Widget>[
                   SizedBox(height: 16.0),
                   Text(
