@@ -1,12 +1,12 @@
 import 'package:bda/authentication/Home_page/Home_page_addmin.dart';
 import 'package:flutter/material.dart';
 
-class StudentMessage extends StatefulWidget {
+class AddminMessage extends StatefulWidget {
   @override
-  _StudentMessageScreenState createState() => _StudentMessageScreenState();
+  _AddminMessageScreenState createState() => _AddminMessageScreenState();
 }
 
-class _StudentMessageScreenState extends State<StudentMessage> {
+class _AddminMessageScreenState extends State<AddminMessage> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
