@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePageuser> {
       case 2:
         return Settings();
       default:
-        return Container(); // Default case, you can return an empty container or handle differently.
+        return Container(); 
     }
   }
 
