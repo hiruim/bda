@@ -44,25 +44,15 @@ class _SignupState extends State<Signup> {
   }
 
   void _signupAndSaveData() async {
-    if (!isAllCorrect) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text('Please agree to the terms and conditions.'),
-        ),
-      );
-    } else if (_formKey.currentState!.validate()) {
+    if (_formKey.currentState!.validate()) {
       try {
-        UserCredential userCredential =
-            await _auth.createUserWithEmailAndPassword(
+        UserCredential userCredential = await _auth.createUserWithEmailAndPassword(
           email: emailController.text,
           password: passwordController.text,
         );
 
         // Store additional user info in Realtime Database
-        await _databaseReference
-            .child('users')
-            .child(userCredential.user!.uid)
-            .set({
+        await _databaseReference.child('users').child(userCredential.user!.uid).set({
           'firstName': nameController.text,
           'lastName': lastnameController.text,
           'email': emailController.text,
@@ -423,22 +413,7 @@ class _SignupState extends State<Signup> {
                           },
                         ),
                       ),
-                      Row(
-                        children: [
-                          Checkbox(
-                            value: isAllCorrect,
-                            onChanged: (value) {
-                              setState(() {
-                                isAllCorrect = value!;
-                              });
-                            },
-                          ),
-                          Text(
-                            'I Have agreed to the terms and conditions',
-                            style: TextStyle(color: Colors.black),
-                          ),
-                        ],
-                      ),
+                      
                       ElevatedButton(
                         onPressed: _signupAndSaveData,
                         style: ElevatedButton.styleFrom(
@@ -446,7 +421,7 @@ class _SignupState extends State<Signup> {
                           minimumSize: Size(200, 50),
                         ),
                         child: Text(
-                          'OK',
+                          'Sign Up',
                           style: TextStyle(
                             fontSize: 30,
                             color: Colors.black,
