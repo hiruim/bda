@@ -1,4 +1,4 @@
-import 'package:bda/authentication/Home_page/home.dart';
+import 'package:bda/wellcome/wellcome.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +26,6 @@ class MyApp extends StatelessWidget {
               primary: Colors.black, seedColor: Colors.black),
           useMaterial3: true,
         ),
-        home: AdminHomePage());
+        home: WelcomePage());
   }
 }
